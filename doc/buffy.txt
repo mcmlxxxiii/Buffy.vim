@@ -1,0 +1,47 @@
+*buffy.txt*                                                A magic buffer menu
+*buffy*
+
+                  __________          _____   _____         ~
+                  \______   \ __ __ _/ ____\_/ ____\ ___.__.~
+                   |    |  _/|  |  \\   __\ \   __\ <   |  |~
+                   |    |   \|  |  / |  |    |  |    \___  |~
+                   |______  /|____/  |__|    |__|    / ____|~
+                          \/                         \/     ~
+
+               A handy menu for switching between open buffers
+                         (and killing them if needed)
+
+==============================================================================
+
+Buffy is a text menu (one item per line) consisting of names of currently
+edited files from all buffers.
+
+Upon stepping onto an item (file name) in this menu and pressing <Enter> key,
+the buffer with the chosen file will be placed into a current window.
+To delete a chosen buffer, press x or d.
+
+Buffy may be invoked inside any window with the :Buffy command. That command
+may be bound to a key combination. By default, Buffy is bound to <Leader>b.
+
+If you prefer a different key combination, make sure to disable the default
+binding first: >
+    let g:buffy_default_key_binding = 0
+    nnoremap <F8> :Buffy<CR>
+<
+
+==============================================================================
+About                                                            *buffy-about*
+
+The author of Buffy is Mykhaylo Gavrylyuk (Github: mcmlxxxiii).
+
+Find the latest version of Buffy at:
+
+    http://github.com/mcmlxxxiii/Buffy.vim
+
+==============================================================================
+License                                                        *buffy-license*
+
+Buffy is released under the same |license| as Vim itself.
+
+
+ vim:tw=78:sw=4:ft=help:norl:
